@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.app{
+  height: 100vh;
+  background: rgba(238, 185, 185, 0.801);
+}
+
+.welcomeLogo{
+  color: rgb(3, 1, 1);
+  font-size: 58px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.order-now{
+  stroke: blue;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+
+}
