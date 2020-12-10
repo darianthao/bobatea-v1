@@ -1,17 +1,28 @@
 import React from 'react';
-import OrderNowFunction from './orderNowFunction';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom';
+
+//Pages//
+import Home from './pages/Home';
+import Menu from './pages/Menu';
+import ContactUs from './pages/ContactUs';
+import AboutUs from './pages/AboutUs';
 
 function App(){
 
   return(
-    <div className="app">
-      <Navbar />
-      <h1 className="welcomeLogo">Welcome</h1>
-      <h2 className="order-now"> <OrderNowFunction  /></h2>
-
-    </div>
+    <>
+    <Router>
+        <Navbar />
+      <Switch>
+        <Route path='/' exact component = {Home} />
+        <Route path='/menu' component = {Menu} />
+        <Route path='/contactus' component = {ContactUs} />
+        <Route path='/aboutus' component = {AboutUs} />
+      </Switch>
+    </Router>
+    </>
   );
 }
 
