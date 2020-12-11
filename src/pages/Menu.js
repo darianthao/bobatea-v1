@@ -1,6 +1,8 @@
 import React from 'react';
-import '../App.css'
+import '../components/MenuSlider/MenuSlider.css'
+import ImageSlider from '../components/MenuSlider/ImageSlider';
+import { SliderData } from '../components/MenuSlider/SliderData';
 
 export default function Menu() {
-    return <h1 className='menu'>MENU</h1>;
+    return <ImageSlider slides={SliderData} />;
 }
